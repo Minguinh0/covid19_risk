@@ -1,0 +1,23 @@
+age = input("Are you a cigarette addict older than 75 years old? yes/no: ").lower().strip()
+chronic = input("Do you have a severe chronic disease? yes/no: ")
+immune = input("Is your immune system too weak? yes/no: ")
+
+if age == 'yes':
+    bool_age = True
+else:
+    bool_age = False
+
+if chronic == 'yes':
+    bool_chronic = True
+else:
+    bool_chronic = False
+
+if immune == 'yes':
+    bool_immune = True
+else:
+    bool_immune = False
+
+if bool_age or bool_chronic or bool_immune == True:
+    print("You are in risky group")
+else:
+    print("You are not in risky group")
